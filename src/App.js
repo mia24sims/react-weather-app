@@ -1,27 +1,23 @@
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <footer>
-        This project was coded by{" "}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
         <a
-          href="https://github.com/mia24sims?tab=repositories"
+          className="App-link"
+          href="https://reactjs.org"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
-          Tamia Sims{" "}
-        </a>{" "}
-        and is{" "}
-      </footer>
-      <a
-        href="https://github.com/mia24sims/react-weather-app"
-        target="_blank"
-        rel="noreferrer"
-      >
-        open-sourced on GitHub
-      </a>
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
