@@ -10,7 +10,7 @@ function App() {
         <a
           href="https://github.com/mia24sims?tab=projects"
           target="_blank"
-          rel="nonreferrer"
+          rel="noreferrer"
         >
           Tamia Sims
         </a>{" "}
@@ -19,7 +19,7 @@ function App() {
       <a
         href="https://github.com/mia24sims/react-weather-app"
         target="_blank"
-        rel="nonreferrer"
+        rel="noreferrer"
       >
         open-sourced on GitHub
       </a>
