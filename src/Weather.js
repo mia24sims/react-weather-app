@@ -11,27 +11,36 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city..."
               className="form-control"
+              autoFocus="onS"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>{" "}
         </div>
       </form>
 
-      <h1>New Yrok</h1>
+      <h1>New York</h1>
       <ul>
         <li>Wednesday 07:00</li>
         <li>Mostly cloudy</li>
       </ul>
       <div className="row">
         <div className="col-6">
-          <img
-            src="https://www.gstatic.com/weather/conditions2023/2023.2/svg/cloudy_light.svg"
-            alt="Mostly Cloudy"
-            width="80px"
-          />
-          20&deg;C
+          <span className="temperature">
+            {" "}
+            <img
+              src="https://www.gstatic.com/weather/conditions2023/2023.2/svg/cloudy_light.svg"
+              alt="Mostly Cloudy"
+              width="60px"
+            />{" "}
+            20
+          </span>
+          <span className="unit">&deg;C</span>
         </div>
         <div className="col-6">
           <ul>
