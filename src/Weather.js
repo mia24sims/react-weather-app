@@ -14,32 +14,34 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl:
-        "https://www.gstatic.com/weather/conditions2023/2023.2/svg/cloudy_light.svg",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 
       wind: response.data.wind.speed,
       city: response.data.name,
     });
   }
 
-  function search() {
-    const apiKey = "3980a7c8f2a782241a093131b099f993";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-  }
+ 
 
   function handleSubmit(event) {
     event.preventDefault();
-      const apiKey = "3980a7c8f2a782241a093131b099f993";
+search();
 
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+ 
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
-    search();
+   
   }
+
+ function search() {
+    const apiKey = "34ae1065362d42545661451bda2b8a1f";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+
 
   if (weatherData.ready) {
     return (
