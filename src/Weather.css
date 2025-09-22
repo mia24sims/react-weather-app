@@ -37,7 +37,7 @@
   font-weight: 400;
  position: relative;
  top: -75px;
- left: 60px;
+ left: 75px;
 }
 
 .Weather .unit {
@@ -49,7 +49,7 @@
   margin-left: 2px;
   position: relative;
   top: -100px;
-  left: 60px;
+  left: 75px;
 }
 
 .Weather .extra-stats{
